@@ -5,7 +5,7 @@ FROM golang:1.8.3-alpine3.6
 ENV CGO_ENABLED=0\
     GOOS=linux
 
-WORKDIR /go/src/github.com/InVisionApp/sio-proxy
+WORKDIR /go/src/github.com/InVisionApp/segment-proxy
 
 # Add rest of source code
 COPY . ./
