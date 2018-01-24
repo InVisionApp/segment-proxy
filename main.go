@@ -27,6 +27,6 @@ func main() {
     http.Handle("/", httputil.NewSingleHostReverseProxy(u))
  
     // Start the server
-    http.ListenAndServe(":80", nil)
-    log.Printf("Proxy Initialized")
+    log.Printf("Initializing Proxy")
+    log.Fatal(http.ListenAndServe(":80", nil))
 }
