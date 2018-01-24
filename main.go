@@ -43,5 +43,5 @@ func main() {
 
 	// Start the server
 	log.Printf("Initializing Proxy")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
