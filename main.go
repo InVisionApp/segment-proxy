@@ -33,8 +33,8 @@ func main() {
 			return
 		}
 
+		w.Header().Set("Content-Type", "application/javascript")
 		w.WriteHeader(http.StatusOK)
-		w.Header().Set("Content-Type", "text/javascript")
 		w.Write(snippet)
 	})
 
