@@ -27,7 +27,6 @@ func main() {
 
 	http.HandleFunc("/ajs-proxy.min.js", func(w http.ResponseWriter, r *http.Request) {
 		snippet, err := ioutil.ReadFile("static/ajs-proxy.min.js")
-		os.Stdout.Write(snippet)
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			return
